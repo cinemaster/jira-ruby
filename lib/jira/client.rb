@@ -93,6 +93,10 @@ module JIRA
       JIRA::Resource::IssuetypeFactory.new(self)
     end
 
+    def Issuelink # :nodoc:
+      JIRA::Resource::IssuelinkFactory.new(self)
+    end
+
     def Priority # :nodoc:
       JIRA::Resource::PriorityFactory.new(self)
     end
