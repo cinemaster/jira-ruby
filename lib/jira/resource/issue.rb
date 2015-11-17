@@ -26,6 +26,8 @@ module JIRA
 
       has_many :comments, :nested_under => ['fields','comment']
 
+      has_many :issuelinks, :nested_under => 'fields'
+
       has_many :attachments, :nested_under => 'fields',
                           :attribute_key => 'attachment'
 
